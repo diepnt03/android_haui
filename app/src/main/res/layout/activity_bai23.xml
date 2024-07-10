@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".bai2.bai23">
+
+    <!-- TextView: Đăng nhập -->
+    <TextView
+        android:id="@+id/tvLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:gravity="center"
+        android:text="Đăng nhập"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <!-- TextView: Username -->
+    <TextView
+        android:id="@+id/tvUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvLogin"
+        android:text="Username"
+        android:textColor="@android:color/black"
+        android:textSize="16sp" />
+
+    <!-- EditText: Username -->
+    <EditText
+        android:id="@+id/edtUsername"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@id/tvUsername"
+        android:hint="Username" />
+
+    <!-- TextView: Password -->
+    <TextView
+        android:id="@+id/tvPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtUsername"
+        android:text="Password"
+        android:textColor="@android:color/black"
+        android:textSize="16sp" />
+
+    <!-- EditText: Password -->
+    <EditText
+        android:id="@+id/edtPassword"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@id/tvPassword"
+        android:layout_marginBottom="16dp"
+        android:hint="Password" />
+
+    <!-- Button: Button 1 -->
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtPassword"
+        android:backgroundTint="@color/purple_500"
+        android:text="OK"
+        android:textStyle="bold" />
+
+    <!-- Button: Button 2 -->
+    <Button
+        android:id="@+id/btnExit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtPassword"
+        android:layout_toEndOf="@id/btnLogin"
+        android:backgroundTint="@color/purple_500"
+        android:text="Hủy"
+        android:textStyle="bold" />
+
+    <!-- Button: Button 3 -->
+    <Button
+        android:id="@+id/btnForget"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtPassword"
+        android:layout_toEndOf="@id/btnExit"
+        android:backgroundTint="@color/purple_500"
+        android:text="Quên mk"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>
