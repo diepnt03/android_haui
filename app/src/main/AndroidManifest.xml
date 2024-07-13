@@ -13,6 +13,19 @@
         android:theme="@style/Theme.MyApplication"
         tools:targetApi="31">
         <activity
+            android:name=".bai2.bai25.SubActivity2"
+            android:label="@string/app_name2"
+            android:exported="false" />
+        <activity
+            android:name=".bai2.bai25.SubActivity1"
+            android:label="@string/app_name1"
+            android:theme="@style/Theme.AppCompat.Dialog" />
+<!--        quy định hiển thị nổi dạng hội thoại-->
+        <activity
+            android:name=".MainActivity"
+
+            android:exported="false" />
+        <activity
             android:name=".bai2.bai24a"
             android:exported="false" />
         <activity
@@ -25,7 +38,7 @@
             android:name=".bai2.bai21"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".bai2.bai25.MainActivity1"
             android:exported="true"
             android:label="@string/app_name"
             android:theme="@style/Theme.MyApplication">
