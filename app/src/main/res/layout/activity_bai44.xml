@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent"
+        tools:context=".bai4.bai44Activity">
+
+        <TextView
+            android:padding="5dp"
+            android:textSize="30sp"
+            android:textAlignment="center"
+            android:text="Thông tin cá nhân"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="Ho ten"
+                android:textSize="25sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/edt_name"
+                android:layout_marginStart="5dp"
+                android:textSize="25sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="CMND"
+                android:textSize="25sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/edt_id"
+                android:layout_marginStart="5dp"
+                android:textSize="25sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <TextView
+            android:padding="5dp"
+            android:textSize="25sp"
+            android:text="Bang cap"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <RadioGroup
+            android:id="@+id/rad_bang_cap"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:layout_weight="1"
+                android:id="@+id/rad_trung_cap"
+                android:textSize="20sp"
+                android:text="Trung cap"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+
+            <RadioButton
+                android:id="@+id/rad_cao_dang"
+                android:textSize="20sp"
+                android:text="Cao dang"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+
+            <RadioButton
+                android:id="@+id/rad_dai_hoc"
+                android:layout_weight="1"
+                android:textSize="20sp"
+                android:text="Dai hoc"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+        </RadioGroup>
+
+        <TextView
+            android:padding="5dp"
+            android:textSize="25sp"
+            android:text="So thich"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <CheckBox
+                android:layout_weight="1"
+                android:id="@+id/chk_doc_sach"
+                android:textSize="20sp"
+                android:text="Doc sach"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+
+            <CheckBox
+                android:id="@+id/chk_doc_bao"
+                android:textSize="20sp"
+                android:text="Doc bao"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+
+            <CheckBox
+                android:id="@+id/chk_doc_code"
+                android:layout_weight="1"
+                android:textSize="20sp"
+                android:text="Doc code"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <TextView
+            android:padding="5dp"
+            android:textSize="25sp"
+            android:text="Thong tin bo sung"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/edt_ttbs"
+            android:textSize="25sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btn_submit"
+            android:text="Gui thong tin"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+</layout>

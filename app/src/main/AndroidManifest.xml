@@ -13,32 +13,13 @@
         android:theme="@style/Theme.MyApplication"
         tools:targetApi="31">
         <activity
-            android:name=".bai2.bai25.SubActivity2"
-            android:label="@string/app_name2"
+            android:name=".m1.M1Activity"
             android:exported="false" />
         <activity
-            android:name=".bai2.bai25.SubActivity1"
-            android:label="@string/app_name1"
-            android:theme="@style/Theme.AppCompat.Dialog" />
-<!--        quy định hiển thị nổi dạng hội thoại-->
-        <activity
-            android:name=".MainActivity"
-
+            android:name=".bai4.bai413.bai413"
             android:exported="false" />
         <activity
-            android:name=".bai2.bai24a"
-            android:exported="false" />
-        <activity
-            android:name=".bai2.bai23"
-            android:exported="false" />
-        <activity
-            android:name=".bai2.bai22"
-            android:exported="false" />
-        <activity
-            android:name=".bai2.bai21"
-            android:exported="false" />
-        <activity
-            android:name=".bai2.bai25.MainActivity1"
+            android:name=".m1.qlsv.QLSVActivity"
             android:exported="true"
             android:label="@string/app_name"
             android:theme="@style/Theme.MyApplication">
@@ -48,6 +29,59 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".bai4.bai412.bai412"
+            android:exported="false" />
+        <activity
+            android:name=".bai4.bai46.bai46"
+            android:exported="false" />
+        <activity
+            android:name=".bai4.bai48.Bai48"
+            android:exported="false" />
+        <activity
+            android:name=".bai4.bai44Activity"
+            android:exported="false" />
+        <activity
+            android:name=".bai3.tuybienlistview.TuyBienListView"
+            android:exported="false" />
+        <activity
+            android:name=".bai3.bai32"
+            android:exported="false" />
+        <activity
+            android:name=".bai3.ListViewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".bai2.bai25.MainActivity1"
+            android:exported="false" />
+        <activity
+            android:name=".bai3.bai31"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".bai2.bai25.SubActivity2"
+            android:exported="false"
+            android:label="@string/app_name2" />
+        <activity
+            android:name=".bai2.bai25.SubActivity1"
+            android:label="@string/app_name1"
+            android:theme="@style/Theme.AppCompat.Dialog" /> <!-- quy định hiển thị nổi dạng hội thoại -->
+        <activity
+            android:name=".bai2.bai22"
+            android:exported="false" />
+        <activity
+            android:name=".bai2.bai24a"
+            android:exported="false" />
+        <activity
+            android:name=".bai2.bai23"
+            android:exported="false" />
+        <activity
+            android:name=".bai2.bai21"
+            android:exported="false" />
+        <activity
+            android:name=".bai5.Bai51"
+            android:exported="false" />
     </application>
 
 </manifest>
