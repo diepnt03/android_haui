@@ -1,13 +1,6 @@
 package com.example.myapplication.m1.qlsv;
 
-import androidx.appcompat.app.AlertDialog;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.databinding.DataBindingUtil;
-
-import android.app.Dialog;
 import android.os.Bundle;
-import android.view.View;
-import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.CheckBox;
@@ -18,9 +11,12 @@ import android.widget.RadioGroup;
 import android.widget.Spinner;
 import android.widget.Toast;
 
+import androidx.appcompat.app.AlertDialog;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.databinding.DataBindingUtil;
+
 import com.example.myapplication.R;
 import com.example.myapplication.databinding.ActivityQlsvactivityBinding;
-import com.example.myapplication.m1.M1Activity;
 
 import java.util.ArrayList;
 
@@ -79,9 +75,11 @@ public class QLSVActivity extends AppCompatActivity {
         adapterThuDo.setDropDownViewResource(
                 androidx.appcompat.R.layout.support_simple_spinner_dropdown_item);
         spnQueQuan.setAdapter(adapterThuDo);
-        spnQueQuan.setOnItemClickListener((parent, view, position, id) -> queQuan.setText(listQueQuan.get(position)));
 
-        adapter = new QLSVAdapter(this, R.layout.item_sinhvien, listSV);
+//        adapter = new QLSVAdapter(this, R.layout.item_sinhvien, listSV);
+
+        adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1,listSV);
+
         lvSinhVien.setAdapter(adapter);
     }
 
@@ -128,6 +126,8 @@ public class QLSVActivity extends AppCompatActivity {
             getInfo();
             clearView();
         });
+
+        spnQueQuan.setOnItemClickListener((parent, view, position, id) -> queQuan.setText(listQueQuan.get(position)));
 
         lvSinhVien.setOnItemClickListener(((parent, view, position, id) ->
                 showMessage(listSV.get(position).hoTen)));
